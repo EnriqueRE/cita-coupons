@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center" 
-    android:padding="25dp"
-    >
-
-    <ImageView 
-	        android:id="@+id/card_view"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:scaleType="fitCenter"
-	        android:contentDescription="OK"/>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <fragment android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:name="com.cita.coupons.fragments.CouponFragment" android:id="@+id/fragment"
+              android:layout_gravity="center" tools:layout="@layout/fragment_coupon_detail"/>
 </FrameLayout>

@@ -4,5 +4,9 @@
     <string name="app_name">CITA Coupons</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_coupon_list">Coupons</string>
+    <string name="title_coupon_detail">Coupon Detail</string>
+    <string name="title_activity_coupons">My Coupons</string>
+    <string name="title_activity_coupon_writer">Coupon Writer</string>
 
 </resources>

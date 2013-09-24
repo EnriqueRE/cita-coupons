@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Flat UI Colors -->
+
+        <!-- Green -->
+        <color name="Turquoise">#19bc9b</color>
+        <color name="Green_Sea">#16a085</color>
+        <color name="Emerald">#57d68d</color>
+        <color name="Nephritis">#19bc9b</color>
+
+        <!-- Blue -->
+        <color name="Peter_River">#3498db</color>
+        <color name="Belize_Hole">#2980b9</color>
+        <color name="Wet_Asphalt">#34485e</color>
+        <color name="Midnight_Blue">#2c3d50</color>
+
+        <!-- Gray -->
+        <color name="Clouds">#ecf0f1</color>
+        <color name="Silver">#bdc3c7</color>
+        <color name="Concrete">#95a5a6</color>
+        <color name="Asbestos">#98a3a3</color>
+
+        <!-- Purple -->
+        <color name="Amethyst">#af7ac4</color>
+        <color name="Wisteria">#a469bd</color>
+
+        <!-- Yellow -->
+        <color name="Sun_Flower">#f1c40e</color>
+        <color name="Orange">#f39c13</color>
+
+        <!-- Orange -->
+        <color name="Carrot">#e67e22</color>
+        <color name="Pumpkin">#d35400</color>
+
+        <!-- Red -->
+        <color name="Alizarin">#eb6f63</color>
+        <color name="Pomegranate">#c0392b</color>
+
+        <!-- Black -->
+        <color name="demo_black">#99333333</color>
+        <color name="transparent_black">#19000000</color>
+
+
+</resources>

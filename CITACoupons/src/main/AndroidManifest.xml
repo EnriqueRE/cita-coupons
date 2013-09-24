@@ -4,46 +4,72 @@
           android:versionCode="1"
           android:versionName="1.0">
 
-
-    <!--API level 10 includes comprehensive reader/writer support as well as
+    <!--
+    API level 10 includes comprehensive reader/writer support as well as
        foreground NDEF pushing, and API level 14 provides an easier way to push
     NDEF messages to other devices with Android Beam and extra convenience methods
-    to create NDEF records-->
+    to create NDEF records
+    -->
 
     <uses-sdk
-            android:minSdkVersion="14"
+            android:minSdkVersion="16"
             android:targetSdkVersion="18"/>
 
     <uses-permission android:name="android.permission.NFC"/>
-    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+
+    <uses-feature
+            android:name="android.hardware.nfc"
+            android:required="true"/>
 
     <application
             android:allowBackup="true"
             android:icon="@drawable/ic_launcher"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
-
         <activity
-                android:name=".MainActivity"
-                android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+                android:name="com.cita.coupons.MainActivity"
+                android:label="@string/title_activity_coupon_writer">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+
+
+
         </activity>
-
         <activity
-                android:name=".CardActivity"
+                android:name="com.cita.coupons.CardActivity"
                 android:label="@string/app_name">
 
             <!-- Handle a collectable card NDEF record -->
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
-                <data android:mimeType="application/vnd.netmagazine.nfcdemo"/>
+
+                <data android:mimeType="application/com.cita.coupons"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
-        </activity>
 
+        </activity>
+        <activity
+                android:name="com.cita.coupons.CouponsActivity"
+                android:label="@string/title_activity_coupons">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
